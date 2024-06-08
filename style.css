@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('Asta\ &\ son\ black\ demon.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+    padding: 0.5rem;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container .image{
+    width: 100%;
+}
+
+.image img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.container form{
+    padding: 2.5rem 2rem;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+form h1{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+form input{
+    width: 90%;
+    height: 1.7rem;
+    background-color: whitesmoke;
+    border: none;
+    color: rgb(27, 27, 27);
+    font-size: 20px;
+    outline: none;
+    padding: 1rem 0;
+}
+
+form i{
+    color: gray;
+}
+
+form select{
+    width: 100%;
+    height: 1.7rem;
+    background-color: whitesmoke;
+    border: none;
+    color: black;
+    font-size: 20px;
+    padding: 1px 0;
+    color: gray;
+}
+
+form input{
+    font-size: 15px;
+}
+
+form .inpt{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    margin: 1.5rem 0;
+}
+
+.inpt-special{
+    border-bottom: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inpt-special input{
+    width: 48%;
+    border-bottom: 1px solid grey;
+}
+
+
+form button{
+    margin-top: 1rem;
+    padding: 0.7rem 2rem;
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .container{
+        display: flex;
+        width: 75%;
+    }
+
+    .container .image{
+        display: none;
+    }
+}
